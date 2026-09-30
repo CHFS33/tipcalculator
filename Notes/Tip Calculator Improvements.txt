@@ -1,0 +1,6 @@
+Tip Calculator Improvements
+
+- Split Bill feature 
+- Split Bill by percentage 
+- Dark mode
+- Pre defined tip options with a custom option
