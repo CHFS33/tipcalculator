@@ -1,0 +1,168 @@
+/*
+Overwrite browser defaults and create main style
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f7f6f3;
+  color: #102238;
+}
+
+/* 
+
+Tip Calculator styling
+
+*/
+
+.calculator-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.calculator-card {
+  background-color: #fff;
+  width: 100%;
+  max-width: 520px;
+  padding: 3rem;
+  border: 1px solid #dfe3e6;
+  border-radius: 12px;
+}
+
+.calculator-heading {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.calculator-subheading {
+  color: #66717f;
+  line-height: 1.5;
+}
+
+.calculator-inputs-container {
+  margin-top: 2.5rem;
+}
+
+.input-group {
+  margin-bottom: 1.5rem;
+}
+
+.input-label {
+  display: block;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #cbd2d8;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.input-container:focus-within {
+  border-color: #078f83;
+  box-shadow: 0px 0px 0px 3px rgba(7, 143, 131, 0.12);
+}
+
+.input-symbol {
+  background-color: #f4f6f7;
+  font-size: 20px;
+  padding: 1rem;
+}
+
+.calculator-input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 1rem;
+  font-family: inherit;
+  font-size: 18px;
+  color: #102238;
+}
+
+.percentage-input {
+  text-align: right;
+}
+
+.error-message {
+  color: #c43d3d;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.calculate-btn {
+  background-color: #078f83;
+  color: #fff;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  padding: 1rem;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+
+.calculate-btn:hover {
+  opacity: 0.9;
+}
+
+.results-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #eff9f7;
+  border: 1px solid #b9ddd8;
+  border-radius: 8px;
+  margin-top: 2rem;
+  padding: 1.7rem 1rem;
+  text-align: center;
+}
+
+.result {
+  width: 45%;
+}
+
+.result-label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.result-amount {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.result-divider {
+  background-color: #b9ddd8;
+  width: 1px;
+  height: 65px;
+}
+
+/*
+Mobile styling adjustment
+*/
+@media screen and (max-width: 500px) {
+  .calculator-card {
+    padding: 2rem 1.2rem;
+  }
+
+  .calculator-heading {
+    font-size: 30px;
+  }
+
+  .result-amount {
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tip Calculator</title>
+  </head>
+  <body>
+    <main class="calculator-section">
+      <div class="calculator-card">
+        <h1 class="calculator-heading">Tip Calculator</h1>
+        <p class="calculator-subheading">
+          Enter your bill and choose a tip percentage.
+        </p>
+        <div class="calculator-inputs-container">
+          <div class="input-group">
+            <label for="bill-amount" class="input-label">Bill Amount</label>
+            <div class="input-container">
+              <span class="input-symbol">$</span>
+              <input
+                id="bill-amount"
+                class="calculator-input"
+                type="number"
+                min="0"
+                step="0.01"
+                placeholder="0.00"
+              />
+            </div>
+          </div>
+
+          <div class="input-group">
+            <label for="tip-percentage" class="input-label"
+              >Tip Percentage</label
+            >
+            <div class="input-container">
+              <input
+                id="tip-percentage"
+                class="calculator-input percentage-input"
+                type="number"
+                min="0"
+                max="100"
+                placeholder="20"
+              />
+              <span class="input-symbol">%</span>
+            </div>
+          </div>
+        </div>
+        <p class="error-message" id="error-message"></p>
+        <button class="calculate-btn" id="calculate-btn">Calculate Tip</button>
+        <div class="results-container">
+          <div class="result">
+            <p class="result-label">Tip Amount</p>
+            <p class="result-amount" id="tip-amount">$0.00</p>
+          </div>
+          <div class="result-divider"></div>
+          <div class="result">
+            <p class="result-label">Total Bill</p>
+            <p class="result-amount" id="total-bill">$0.00</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
