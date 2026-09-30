@@ -17,7 +17,7 @@ function calculateTip() {
 
   errorMessageElement.textContent = "";
 
-  tipAmountElement.textContent = "$0    .00";
+  tipAmountElement.textContent = "$0.00";
   totalBillElement.textContent = "$0.00";
 
   if (billInput.value === "") {
